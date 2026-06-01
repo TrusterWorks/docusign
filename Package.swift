@@ -6,12 +6,12 @@ let package = Package(
     platforms: [.iOS(.v14)],
     products: [
         .library(
-            name: "DocumentScannerPlugin",
+            name: "CapacitorDocumentScanner",
             targets: ["DocumentScannerPlugin", "DocumentScannerPluginObjC"]
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/nicklasanielsen/capacitor-swift-pm", from: "8.0.0")
+        .package(url: "https://github.com/ionic-team/capacitor-swift-pm.git", from: "8.0.0")
     ],
     targets: [
         .target(
