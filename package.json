@@ -11,7 +11,9 @@
     "android/build.gradle",
     "dist/",
     "ios/Plugin/",
-    "CapacitorDocumentScanner.podspec"
+    "CapacitorDocumentScanner.podspec",
+    "Package.swift",
+    "ios/Sources/"
   ],
   "author": "David Marcus",
   "license": "MIT",
