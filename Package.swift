@@ -7,7 +7,7 @@ let package = Package(
     products: [
         .library(
             name: "DocumentScannerPlugin",
-            targets: ["DocumentScannerPlugin"]
+            targets: ["DocumentScannerPlugin", "DocumentScannerPluginObjC"]
         )
     ],
     dependencies: [
@@ -21,6 +21,15 @@ let package = Package(
                 .product(name: "Cordova", package: "capacitor-swift-pm")
             ],
             path: "ios/Sources/DocumentScannerPlugin"
+        ),
+        .target(
+            name: "DocumentScannerPluginObjC",
+            dependencies: [
+                .product(name: "Capacitor", package: "capacitor-swift-pm"),
+                .product(name: "Cordova", package: "capacitor-swift-pm")
+            ],
+            path: "ios/Sources/DocumentScannerPluginObjC",
+            publicHeadersPath: "include"
         )
     ]
 )
